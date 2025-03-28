@@ -1,23 +1,20 @@
 //editor online: https://jsfiddle.net/
 
-//no editor online exclua a linha abaixo
-const rl = require('readline-sync');
+const rl = require('readline-sync');        // no editor online comente esta linha
 
 let qtd = 4;
 
 let gabarito = [];
 for (let i = 0; i < qtd; i++) {
-    //no editor online use:
-    //prompt("Acertos: "+acertos);
-    resposta = rl.question("Gabarito: ");
+    //prompt("Acertos: "+acertos);          //no editor online descomente esta linha
+    resposta = rl.question("Gabarito: ");   // no editor online comente esta linha
     gabarito[i] = resposta;
 }
 
 let respostasAluno = [];
 for (let i = 0; i < qtd; i++) {
-    //no editor online use:
-    //prompt("Acertos: "+acertos);
-    resposta = rl.question("Respostas: ");
+    //resposta = prompt("Acertos: "+acertos);   //no editor online descomente esta linha
+    resposta = rl.question("Respostas: ");      // no editor online comente esta linha
     respostasAluno[i] = resposta;
 }
 
@@ -28,7 +25,6 @@ for (let i = 0; i < qtd; i++) {
         acertos++;
     }
 }
-//no editor online use:
-//alert("Acertos: "+acertos);
-console.log("Acertos: "+acertos);
+//alert("Acertos: "+acertos);       // no editor online comente esta linha
+console.log("Acertos: "+acertos);   // no editor online comente esta linha
 
