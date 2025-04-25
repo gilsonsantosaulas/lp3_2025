@@ -21,3 +21,8 @@ for (let i = 0; i < qtd; i++) {
 console.log("Quantidade particular: "+paciente_particular);
 console.log("Quantidade plano de saúde: "+paciente_plano);
 
+for (let i = 0; i < qtd; i++) {
+    if(planos_saude[i]!="particular") {
+        console.log(nomes_pacientes[i] + " - " + planos_saude[i]);
+    }
+}
